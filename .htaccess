@@ -1,0 +1,7 @@
+ 
+ RewriteEngine On
+
+# RewriteRule home  index.php?controller=home
+RewriteRule ^([a-z]+)$  ?controller=$1
+RewriteRule ^([a-z]+)/([a-z\-]+)$  ?controller=$1&action=$2
+RewriteRule ^([a-z]+)/([a-z\-]+)/([1-9]+)$  ?controller=$1&action=$2&id=$3      
